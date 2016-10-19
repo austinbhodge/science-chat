@@ -1,0 +1,16 @@
+
+<div class="container">
+  <h1> Profile <button class="btn btn-default pull-right" type="button" data-toggle="modal" data-target="#addTopic"> <i class="icon ion-edit"></i> Edit Profile </button></h1>
+  <hr/>
+  <div class="col-lg-3 col-md-4">
+    <img class="img-responsive profile-pic" src="{{( profile | async )?.photoURL}}" >
+  </div>
+  <div class="col-lg-6 col-md-8">
+    <h5><b>Display Name</b></h5>
+    <h4> {{( profile | async )?.username}}</h4>
+    <h5><b>Education</b> </h5>
+    <h4> {{( profile | async )?.education}}</h4>
+    <h5><b>Message Style</b></h5>
+    <div class="circle" [ngStyle]="(profile | async)?.stylePrefs"></div>
+  </div>
+</div>

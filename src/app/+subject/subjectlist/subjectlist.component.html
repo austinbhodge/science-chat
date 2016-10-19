@@ -1,0 +1,61 @@
+<div class="container">
+  <h1 id="title" class="text-uppercase">{{ (subject | async)?.name }} <button class="btn btn-default pull-right" type="button" data-toggle="modal" data-target="#addTopic"> <i class="icon ion-plus-circled"></i> Add Topic </button></h1>
+  <hr/>
+
+  <table class="table">
+      <thead>
+        <tr>
+          <th>Topic</th>
+          <th>Complexity</th>
+          <th class="hidden-xs">Prerequisite Concepts</th>
+          <th class="hidden-xs">Responses</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let entry of (topics | async); let i = index;" [routerLink]="[ './topic', entry.$key]">
+          <td>{{entry.topic.name}}</td>
+          <td>{{entry.topic.complexity}}</td>
+          <td class="hidden-xs">{{entry.topic.prerequisite}}</td>
+          <td class="hidden-xs">{{lengthCouter(entry.topic.chatlog)}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<div id="addTopic" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title">New Discussion Topic</h2>
+      </div>
+      <div class="modal-body">
+        <form>
+        <div class="form-group">
+          <label for="topic">Topic:</label>
+          <input type="topic" class="form-control" [(ngModel)]="newTopic.name" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group">
+          <label for="sel1">Complexity:</label>
+          <select  class="form-control" [(ngModel)]="newTopic.complexity" [ngModelOptions]="{standalone: true}">
+            <option>Simple</option>
+            <option>Comprehensive</option>
+            <option>Detailed</option>
+            <option>Complicated</option>
+            <option>Intricate</option>
+            <option>Beyond Comprehension</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comment">Prerequisite Concepts:</label>
+          <textarea class="form-control" rows="5" [(ngModel)]="newTopic.prerequisite" [ngModelOptions]="{standalone: true}"></textarea>
+        </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-info pull-right" data-dismiss="modal" (click)="addTopic()">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>

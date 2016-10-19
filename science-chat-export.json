@@ -1,0 +1,147 @@
+{
+  "subjects" : [ {
+    "subject" : {
+      "description" : "The study of topics such as quantity (numbers), structure, space, and change. Mathematicians seek out patterns and use them to formulate new conjectures.",
+      "id" : 1,
+      "name" : "mathmatics",
+      "topics" : [ {
+        "topic" : {
+          "name" : "general"
+        }
+      } ],
+      "type" : "formal"
+    }
+  }, {
+    "subject" : {
+      "description" : "The systematic study of the form of arguments. A valid argument is one where there is a specific relation of logical support between the assumptions of the argument and its conclusion.",
+      "id" : 2,
+      "name" : "logic",
+      "topics" : [ {
+        "topic" : {
+          "name" : "general"
+        }
+      } ],
+      "type" : "formal"
+    }
+  }, {
+    "subject" : {
+      "description" : "The science that studies the composition, structure, properties and change of matter. Including topics such as the properties of individual atoms, and how atoms form chemical bonds to create chemical compounds",
+      "id" : 3,
+      "name" : "chemistry",
+      "topics" : [ {
+        "topic" : {
+          "name" : "general"
+        }
+      } ],
+      "type" : "physical"
+    }
+  }, {
+    "subject" : {
+      "description" : "The science that involves the study of matter and its motion through space and time, along with related concepts such as energy and force. One of the most fundamental scientific disciplines with a goal of understanding the universe.",
+      "id" : 4,
+      "name" : "physics",
+      "topics" : [ {
+        "topic" : {
+          "name" : "general"
+        }
+      } ],
+      "type" : "physical"
+    }
+  }, {
+    "subject" : {
+      "description" : "The formal discipline of Earth sciences include the study of the atmosphere, hydrosphere, oceans and biosphere, as well as the solid earth. ",
+      "id" : 5,
+      "name" : "earth science",
+      "topics" : [ {
+        "topic" : {
+          "name" : "general"
+        }
+      } ],
+      "type" : "physical"
+    }
+  }, {
+    "subject" : {
+      "description" : "The study of celestial objects (such as stars, galaxies, planets, moons, etc.) and processes (such as supernovae explosions, gamma ray bursts, etc.), the physics, chemistry, and evolution of such objects and processes.",
+      "id" : 6,
+      "name" : "astronomy",
+      "topics" : [ {
+        "topic" : {
+          "name" : "general"
+        }
+      } ],
+      "type" : "physical"
+    }
+  }, {
+    "subject" : {
+      "description" : "The study of life and living organisms, including their structure, function, growth, evolution, distribution, identification and taxonomy.",
+      "id" : 7,
+      "name" : "biology",
+      "topics" : [ {
+        "topic" : {
+          "name" : "general"
+        }
+      } ],
+      "type" : "life"
+    }
+  }, {
+    "subject" : {
+      "description" : "The study of interactions organisms have with each other, other organisms, and with abiotic components of their environment.",
+      "id" : 8,
+      "name" : "ecology",
+      "topics" : [ {
+        "topic" : {
+          "name" : "general"
+        }
+      } ],
+      "type" : "life"
+    }
+  }, {
+    "subject" : {
+      "description" : "The study of behavior and mind, embracing all aspects of conscious and unconscious experience as well as thought.",
+      "id" : 9,
+      "name" : "psychology",
+      "topics" : [ {
+        "topic" : {
+          "name" : "general"
+        }
+      } ],
+      "type" : "social"
+    }
+  }, {
+    "subject" : {
+      "description" : "The study of social behaviour or society, including its origins, development, organization, networks, and institutions.",
+      "id" : 10,
+      "name" : "sociology",
+      "topics" : [ {
+        "topic" : {
+          "name" : "general"
+        }
+      } ],
+      "type" : "social"
+    }
+  }, {
+    "subject" : {
+      "description" : "The study of the theory, experimentation, and engineering that form the basis for the design and use of computers.",
+      "id" : 11,
+      "name" : "computer science",
+      "topics" : [ {
+        "topic" : {
+          "name" : "general"
+        }
+      } ],
+      "type" : "applied science"
+    }
+  }, {
+    "subject" : {
+      "description" : "the application of mathematics, empirical evidence and scientific, economic, social, and practical knowledge in order to invent, innovate, design, and improve structures, machines, tools, systems, processes and organizations.",
+      "id" : 12,
+      "name" : "engineering",
+      "topics" : [ {
+        "topic" : {
+          "name" : "general"
+        }
+      } ],
+      "type" : "applied science"
+    }
+  } ]
+}

@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>{{ (topic | async)?.name }}</h1>
+  <hr/>
+
+  <div class="chat-window">
+    <div class="chat-stream">
+
+      <div *ngFor="let message of (chatlog | async)">
+        <div class="chat-message" [ngStyle]="message.style">
+          <img class="img-responsive img-circle pull-left message-pic" src="{{message.photoURL}}">
+          <p class="message-name" role="button">{{message.username}}</p>
+          <div class="message-border"></div>
+          <p class="message-text">{{message.value}}</p>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="typing-area">
+    <div class="form-group">
+      <input [ngStyle]="(profile)?.stylePrefs" class="form-control chat-form" type="text" [(ngModel)]="newMessage" [ngModelOptions]="{standalone: true}" (keypress)="enterCheck($event.keyCode)">
+      <button class="btn send-message" type="button" (click)="enterMessage()"> <i class="icon ion-paper-airplane"></i> <span class="hidden-xs">send</span></button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+
+
+.outlet{
+  min-height: 75vh;
+}
+
+.footer-dark{
+  padding-bottom: 5px;
+  padding-top: 15px;
+  border-top: 1px solid #222;
+}
+
+
+.profile-btn{
+  height: 45px;
+  width: 45px;
+  transition: 0.4s;
+}
+
+.settings{
+  font-size: 45px;
+  position: relative;
+  top:-8px;
+  left:40px;
+  color: rgba(255, 255, 255, 0.15);
+  transition: 0.4s;
+  height: 45px;
+  width: 45px;
+  margin: none;
+}
+
+.settings:hover .profile-btn{
+  transition: 0.4s;
+  cursor: pointer;
+  opacity: 0.3;
+
+}
+
+.settings:hover{
+  color: rgba(255, 255, 255, 0.75);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.action-button{
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+#navcol-1{
+  height: 50px !important;
+}
+
+body > app-root > div:nth-child(1) > nav{
+  height: 60px !important;
+}
+
+#navcol-1 > p{
+  height: 50px !important;
+}

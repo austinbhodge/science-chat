@@ -1,0 +1,43 @@
+
+
+<div>
+    <nav class="navbar navbar-inverse navigation-clean-button animated fadeInDown">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" [routerLink]="['']">SCIENCE CHAT</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <p class="navbar-text navbar-right actions">
+                <a *ngIf="!loggedIn" class="btn btn-default action-button" role="button" (click)="login()">Log In</a>
+                <img *ngIf="loggedIn" class="img-responsive img-circle pull-right profile-btn" src="{{user.auth.photoURL}}" ><i *ngIf="loggedIn" class="icon ion-gear-b settings" [routerLink]="[ '/profile', (user)?.uid ]"></i>
+                </p>
+
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="outlet">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6 item text" style="text-align:right;">
+                  <h3>The Developer</h3>
+                  <p>Science chat was built as a coding exercise. It was also built to perhaps in a small way help science flourish on the web. I do not think that it will gain to much popularity however. It is an open source project, feel free to
+                      look at the source code.</p>
+              </div>
+                <div class="col-md-6 item text">
+                    <h3>Science Chat</h3>
+                    <p>Science chat was built as a coding exercise. It was also built to perhaps in a small way help science flourish on the web. I do not think that it will gain to much popularity however. It is an open source project, feel free to
+                        look at the source code.</p>
+                </div>
+                <div class="col-md-12 col-sm-4 item social"><a href="#" (click)="logout()"><i class="icon ion-social-github"></i></a></div>
+            </div>
+            <p class="copyright">Science Chat © 2016</p>
+        </div>
+    </footer>
+</div>

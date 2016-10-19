@@ -1,0 +1,25 @@
+<video poster="../../assets/img/Meeting-Room.jpg" id="bgvid" playsinline autoplay muted loop>
+  <source src="../../assets/mp4/Meeting-Room.mp4" type="video/mp4">
+</video>
+<div class="features-boxed">
+    <div class="container-fluid">
+        <div class="intro">
+            <h1 class="text-center">SCIENCE CHAT</h1>
+            <h3 class="text-center">choose a topic to think about & discuss</h3>
+        </div>
+        <hr />
+        <div class="row features">
+            <div *ngFor="let science of subjects | async" class="col-lg-2 col-md-4 col-sm-6 item">
+              <a [routerLink]="[ '/subject', science.subject.id ]">
+              <div>
+                <div class="box">
+                    <h3 class="text-uppercase">{{science.subject.name}} </h3>
+                    <h6 class="text-uppercase">{{science.subject.type}} </h6>
+                    <img src="{{science.subject.image}}" class="img img-responsive" height="160" width="160">
+                  </div>
+                </div>
+              </a>
+            </div>
+        </div>
+    </div>
+</div>
