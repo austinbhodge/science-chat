@@ -19,10 +19,10 @@ import {
 } from "angularfire2";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC4pCB84kJ-t1MRszCwR-VEbmSRIN--gMM",
-  authDomain: "science-chat.firebaseapp.com",
+  apiKey: "NO STEALING",
+  authDomain: "NO STEALING",
   databaseURL: "https://science-chat.firebaseio.com",
-  storageBucket: "science-chat.appspot.com"
+  storageBucket: "NO STEALING"
 };
 
 @NgModule({
